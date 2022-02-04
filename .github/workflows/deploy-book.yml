@@ -27,11 +27,13 @@ jobs:
 
     - name: Install dependencies
       run: |
+        cd docs
         pip install -r requirements.txt
 
     # Build the book
     - name: Build the book
       run: |
+        cd docs
         jupyter-book build .
 
     # Push the book's HTML to github-pages
@@ -39,4 +41,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
+        publish_dir: ./docs/_build/html
