@@ -1,16 +1,12 @@
-# Welcome to your Jupyter Book
+# Aus2200
 
-This is a small sample book to give you a feel for how book content is
-structured.
+Aus2200 is an ACCESS regional atmospheric run over the entire Australian continent, with a grid spacing of 0.0198 degree (approximately 2.2km at the equator)
 
-:::{note}
-Here is a note!
-:::
+It is intended as an extension of the very high resolution Aus400 run, compared to the previous run Aus2200 uses a lower resolution but is run for a much longer simulation period.
 
-And here is a code block:
 
-```
-e = mc^2
-```
+## Configuration
 
-Check out the content pages bundled with this sample book to see more.
+Aus2200 uses the Unified Model atmosphere and JULES land surface. It is based off of the [UM Nested Suite](https://code.metoffice.gov.uk/trac/rmed/wiki/suites/nesting) using [RAL3](https://code.metoffice.gov.uk/trac/rmed/wiki/ra3) science configuration.
+
+
